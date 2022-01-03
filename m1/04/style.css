@@ -8,12 +8,16 @@ body {
 }
 section{
     display: flex;
+    margin-bottom: 120px;
+    margin-top: 10px;
 }
 h1{
     font-size: 50px;
 }
 .half-width {
 width: 50%;
+float: left;
+margin-left: 5%;
 padding-left: 3%;
 }
 .half-width img {
@@ -33,3 +37,46 @@ padding-left: 3%;
     background-image: url(images/top-banner.png);
     background-repeat: no-repeat;
 }
+.dream-big{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+p{
+    color: dimgray;
+}
+
+/* .dream-area{
+    background-image: url("images/dream-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h2{
+    font-size: 40px;
+}
+.experience-area{
+    background-image: url("images/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.experience-area h3{
+    color: orange;
+}
+
+.experience-area div{
+    box-shadow: 5px 7px 40px gray;
+    height: 80%;
+}
+#full-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#baby-web{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+} */
