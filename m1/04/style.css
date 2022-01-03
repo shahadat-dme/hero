@@ -1,0 +1,35 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Open+Sans:ital,wght@1,500&family=Poppins&family=Raleway:ital,wght@0,600;1,100&display=swap'); */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.name {
+    color: rgb(216, 51, 10);
+}
+section{
+    display: flex;
+}
+h1{
+    font-size: 50px;
+}
+.half-width {
+width: 50%;
+padding-left: 3%;
+}
+.half-width img {
+    width: 80%;
+}
+.link-button {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(255, 60, 0), tomato);
+    /* background-color: orange; */
+    color: white;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.top-banner {
+    /* background-image: linear-gradient(); */
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
