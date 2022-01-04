@@ -6,7 +6,8 @@ body {
 .name {
     color: rgb(216, 51, 10);
 }
-section{
+.container
+{
     display: flex;
     margin-bottom: 120px;
     margin-top: 10px;
@@ -45,7 +46,9 @@ padding-left: 3%;
 p{
     color: dimgray;
 }
-
+.experience{
+    text-align: center;
+}
 /* .dream-area{
     background-image: url("images/dream-bg.png");
     background-repeat: no-repeat;
