@@ -49,6 +49,7 @@ body {
 .mission-text span{
     color: tomato;
 }
+
 .mission-type {
     width: 30%;
     margin-left: 1%;
@@ -57,6 +58,18 @@ body {
     border-radius: 5px;
     box-shadow: 10px 12px 15px rgb(243, 154, 183);
     border: 1px solid pink;
+}
+#item1{
+    background-color: rgb(13, 196, 202);
+
+}
+#item2{
+    background-color: rgb(97, 184, 109);
+
+}
+#item3{
+    background-color: rgb(84, 113, 192);
+
 }
 .mission-type img{
     width: 200px;
@@ -99,19 +112,44 @@ margin-top: 10px;
     margin-top: 10px;
     display: flex;
     /* background-color: aquamarine; */
-    height: 300px;
+    height: 100vh;
     background-color: violet;
-    margin-bottom: 0;
+    /* margin-bottom: -20px; */
+
 }
 .address{
     width: 45%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.demo{
+    margin-top: 5%;
+    
+
+}
+.label{
+    margin-bottom: 2rem;
+  border-bottom: 3px solid black;
+  width: 115px;
+}
+#hero{
+    width: 130px;
+    height: 35px;
+    background-color: rgb(20, 3, 3);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
 }
 .form{
     width: 45%;
+    margin-bottom: 8%;
+    line-height: 40px;
+   
 }
 
 .footer{
     background-color: rgb(12, 12, 12);
+    margin-top: -20px;
 }
 .footer h1{
     text-align: center;
