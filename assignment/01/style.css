@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Open+Sans:ital,wght@1,500&family=Poppins&family=Raleway:ital,wght@0,600;1,100&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+}
+.header-text{
+    width: 50%;
+    margin-left: 5%;
+    box-shadow: none;
+}
+.header-title {
+    font-size: 50px;
+    border-left: 5px solid rgb(255, 95, 47);
+    border-radius: 5px;
+}
+.header-title span{
+    color: rgb(224, 11, 117);
+}
+.header-text p{
+    color: rgb(75, 65, 65);
+}
+.header-btn {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(180, 11, 202), tomato);
+    color: white;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.header-image img{
+    width: 42%;
+    display: flex;
+    float: left;
+    width: 450px;
+    height: 450px;
+}
+.mission {
+    display: flex;
+}
+.mission-text h1{
+    text-align: center;
+    font-size: 50px;
+}
+.mission-text span{
+    color: tomato;
+}
+.mission-type {
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 12px 15px rgb(243, 154, 183);
+    border: 1px solid pink;
+}
+.mission-type img{
+    width: 200px;
+    height: 200px;
+}
+.develop{
+    display: flex;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+}
+.develop-image img{
+    width: 50%;
+    margin: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 400px;
+    height: 400px;
+}
+.develop-text{
+    width: 50%;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.community{
+    display: flex;
+}
+.community-text{
+width: 45%;
+margin: 10px;
+padding: 10px;
+}
+.community-image img{
+width: 400px;
+height: 400px;
+margin-top: 10px;
+}
+.contact{
+    display: flex;
+    background-color: aquamarine;
+}
+.address{
+    width: 45%;
+}
+.form{
+    width: 45%;
+}
+
+
