@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: rgb(255, 47, 168);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 32px;
+    line-height: 80px;
+    padding: 0 60px;
+    font-weight: 700;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    /* justify-content: space-between; */
+}
+a.active, a:hover{
+    color: yellowgreen;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 31px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
