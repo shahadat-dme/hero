@@ -48,3 +48,125 @@
 img{
     width: 500px;
 }
+.fas{
+    color: indianred;
+}
+
+.a {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    transform: rotate(20deg);
+  }
+  
+  .b {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    -ms-transform: skewY(20deg); /* IE 9 */
+    transform: skewY(20deg);
+  }
+  
+  .c {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    -ms-transform: scaleY(1.5); /* IE 9 */
+    transform: scaleY(1.5);
+  }
+
+.box-07{
+    width: 200px;
+    height: 200px;
+    border: 2px solid burlywood;
+    background-color: crimson;
+    transition: width 5s linear, heigth 5s;
+}
+.box-07:hover{
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+}
+
+/* 07 */
+
+.field{
+    border: 1px solid;
+    /* height: 400px; */
+}
+.field:hover .bat{
+transform: rotateY(-60deg) ;
+transform-origin: top right;
+}
+.bat{
+    /* padding-top: 500px; */
+    transition: transform 0.2s ease-in;
+}
+.ball{
+    /* display: hidden; */
+    /* padding-top: 100px; */
+    padding-top: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: crimson;
+    position: relative;
+    left: 300px;
+    transition: transform 1s ease-out .3s;
+}
+.field:hover .ball{
+    transform: translate(800px, -100px);
+}
+
+/* 08 */ /* form- 0% -> to - 100% */
+@keyframes sliding {
+    0%{
+        background-color: mediumseagreen;
+        left: 0px;
+        top: 0px;
+    }
+    50%{
+        background-color: rgb(10, 66, 104);
+        top: 100px;
+    }
+    100%{
+        background-color: mediumvioletred;
+        left: 200px;
+        top: 0px;
+    }
+}
+.stage{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(155, 229, 201);
+    top: 0;
+}
+.ball-bounce{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(2, 170, 2);
+    position: relative;
+    animation: sliding 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+
+/* 03 */
+
+.container09{
+    display: flex;
+}
+.box09{
+    /* float: left; */
+    /* float: right; */
+    /* min-height: 100px;
+    max-width: 200px; */
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: plum;
+    margin: 10px;
+}
