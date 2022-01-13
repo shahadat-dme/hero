@@ -13,8 +13,11 @@
 .calender {
     height: 500px;
     display: grid;
+    /* grid-template-columns: 150px 150px 1fr 1fr; */
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 2em repeat(5 1fr);
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
     grid-gap: 1em;
 }
 
