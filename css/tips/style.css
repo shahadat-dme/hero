@@ -1,0 +1,24 @@
+/* tip 1 */
+h1 {
+    font-size: 2em;
+    font-size: 1.75em;
+}
+
+article {
+    padding: 1rem;
+    margin: .5rem;
+}
+
+/* tips 2 */
+p {
+    width: clamp(45ch, 50%, 75ch);
+}
+
+/* tips 3 */
+h3 {
+    color: hsl(197, 100%, 50%);
+}
+
+.navbar {
+    scroll-padding: 1rem 0 0 0;
+}
