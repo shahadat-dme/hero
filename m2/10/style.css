@@ -1,0 +1,52 @@
+:root {
+    --main-color: slateblue;
+    --border-color: rgb(117, 167, 117);
+}
+
+#third {
+    color: darkgoldenrod;
+}
+
+.heading {
+    color: crimson;
+}
+
+h1 {
+    background-color: aqua;
+}
+
+h1 {
+    background-color: blue;
+}
+
+.custom {
+    color: var(--main-color);
+}
+
+footer {
+    /* background-color: var(--border-color); */
+    border: 10px solid var(--border-color);
+}
+
+/* Navbar */
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 2em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: springgreen;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 128, 79, 0.753);
+}

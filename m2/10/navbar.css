@@ -1,0 +1,35 @@
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 2em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: springgreen;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 128, 79, 0.753);
+}
+
+nav>ul>li:hover>.dropdown {
+    display: block;
+}
+
+nav>ul>li:hover>.dropdown.mega-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+}
+
+.mega-menu {
+    font-size: 20px;
+}
