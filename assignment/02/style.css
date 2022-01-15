@@ -7,25 +7,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* navbar */
 .container-nav {
     height: 50px;
-    width: 100%;
+    width: 95%;
+}
+
+.container {
+    margin-left: 20px;
+    padding-left: 40px;
 }
 
 label.logo {
     color: hsl(0, 3%, 39%);
     font-size: 32px;
-    line-height: 80px;
-    padding: 0 60px;
+    line-height: 100px;
+    padding: 0 40px;
     font-weight: 700;
 }
 
-nav ul {
+.navbar {
     float: right;
     margin-right: 30px;
+    cursor: pointer
 }
 
-nav ul li {
+.navbar li {
     display: inline-block;
     list-style: none;
     line-height: 80px;
@@ -36,18 +43,17 @@ nav ul li {
     border-radius: 3px;
 }
 
-nav ul li a {
+.navbar li a {
     color: hsl(0, 5%, 25%);
     text-decoration: none;
 }
 
 .checkbtn {
     font-size: 31px;
-    color: white;
-    float: right;
+    color: hsl(0, 0%, 5%);
+    float: left;
     line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
+    margin-left: 30px;
     display: none;
 }
 
@@ -61,7 +67,7 @@ nav ul li a {
         padding-left: 50px;
     }
 
-    nav ul li a {
+    .navbar li a {
         font-size: 16px
     }
 }
@@ -71,34 +77,152 @@ nav ul li a {
         display: block;
     }
 
-    ul {
+    .navbar {
+        background: no-repeat;
         position: fixed;
         width: 100%;
         height: 100vh;
-        top: 78px;
-        left: -100%;
-        background: rgb(53, 51, 51);
+        top: 30px;
+        left: -70%;
+        background-color: hsla(0, 2%, 50%, 0.822);
         text-align: center;
         transition: all 0.5s;
+        cursor: pointer;
     }
 
-    nav ul li {
+    .navbar li {
         display: block;
-        margin: 50px 0;
+        margin: 20px 0;
         line-height: 31px;
     }
 
-    nav ul li a {
+    .navbar li a {
         font-size: 20px;
-    }
-
-    a:hover,
-    a.active {
-        background-color: none;
-        color: hsl(90, 25%, 69%);
+        color: #000;
     }
 
     #check:checked~ul {
         left: 0;
     }
+}
+
+/* header content */
+
+.header-content {
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content h1 {
+    font-size: 3.5em;
+}
+
+.header-content p {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.header-content .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(hsla(335, 96%, 43%, 0.937), hsl(268, 100%, 64%));
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.half-header {
+    width: 50%;
+}
+
+.half-header img {
+    background-image: url(./assets/images/Circle\ design.svg);
+    background-color: hsla(3, 43%, 83%, 0.555);
+    border-radius: 25px;
+}
+
+
+.animation {
+    transition: all ease 0.5s;
+}
+
+.animation:hover {
+    transform: scale(1.1) rotate(23deg);
+}
+
+/* client */
+.client {
+    width: 70%;
+    padding-left: 100px;
+    list-style: none;
+    margin: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* collect */
+.collection-title h1 {
+    display: flex;
+    font-weight: 700;
+    margin: 75px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.collect {
+    width: 90%;
+    margin-left: 80px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    /* float: right; */
+    background-image: linear-gradient(hsla(335, 96%, 43%, 0.937), hsl(268, 100%, 64%));
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#btn-see-more {
+    float: right;
+    padding-right: 50px;
+    margin-right: 40px;
+}
+
+/* feature */
+.feature {
+    display: flex;
+    width: 90%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.half-feature {
+    width: 50%;
+}
+
+.half-feature .btn {
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(hsla(335, 96%, 43%, 0.937), hsl(268, 100%, 64%));
+    color: white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
 }
