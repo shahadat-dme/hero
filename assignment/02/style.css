@@ -7,6 +7,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* navbar */
 .container-nav {
     height: 50px;
@@ -156,6 +160,26 @@ label.logo {
     transform: scale(1.1) rotate(23deg);
 }
 
+@media screen and (max-width: 568px) {
+    .header-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .client {
+        flex-direction: column-reverse;
+    }
+
+    /* .collect {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+
+    .feature {
+        flex-direction: column-reverse;
+    }
+}
+
 /* client */
 .client {
     width: 70%;
@@ -207,13 +231,26 @@ hr {
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
 }
+
+.filled {
+    color: hsla(56, 100%, 50%, 0.61);
+}
+
+.empty {
+    color: hsl(60, 36%, 78%);
+}
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+    .collect {
+        flex-direction: column-reverse;
+    }
+}
+
 
 .btn {
     display: inline-block;
     text-decoration: none;
-    /* float: right; */
     background-image: linear-gradient(hsla(335, 96%, 43%, 0.937), hsl(268, 100%, 64%));
     color: white;
     font-weight: 700;
@@ -308,19 +345,6 @@ hr {
 
 .msg textarea {
     height: 212px;
-}
-
-::-webkit-input-placeholder {
-    color: #c5ecfd;
-}
-
-::-moz-placeholder {
-    color: #c5ecfd;
-}
-
-:-ms-input-placeholder {
-
-    color: #c5ecfd;
 }
 
 .form-btn {
