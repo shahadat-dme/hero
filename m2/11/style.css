@@ -15,3 +15,53 @@
     justify-content: center;
     align-items: center;
 }
+
+.position-box {
+    border: 3px solid darkblue;
+    position: absolute;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+#box-1 {
+    background-color: coral;
+}
+
+#box-2 {
+    background-color: crimson;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+#box-3 {
+    background-color: springgreen;
+    position: relative;
+    top: 50px;
+    left: 65px;
+}
+
+.media-query {
+    background-color: darkorange;
+    height: 200px;
+}
+
+@media only screen and (max-width:688px) {
+    .media-query {
+        background-color: darkred;
+        text-align: center;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .media-query {
+        background-color: rgb(139, 0, 104);
+        text-align: center;
+        height: 700px;
+    }
+}
