@@ -64,7 +64,7 @@ label.logo {
 @media(max-width:952px) {
     label.logo {
         font-size: 31px;
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
 
     .navbar li a {
@@ -79,11 +79,12 @@ label.logo {
 
     .navbar {
         background: no-repeat;
-        position: fixed;
+        position: relative;
+        font-weight: 700;
         width: 100%;
-        height: 100vh;
-        top: 30px;
-        left: -70%;
+        height: 70vh;
+        top: 10px;
+        left: -100%;
         background-color: hsla(0, 2%, 50%, 0.822);
         text-align: center;
         transition: all 0.5s;
@@ -167,13 +168,18 @@ label.logo {
     align-items: center;
 }
 
+hr {
+    width: 90%;
+    border: 1px solid hsla(150, 2%, 38%, 0.295);
+}
+
 /* collect */
 .collection-title h1 {
     display: flex;
     font-weight: 700;
     margin: 75px 50px;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .collect {
@@ -225,4 +231,29 @@ label.logo {
     padding: 10px 30px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color: #0a0826;
+    color: #d9dbe1;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer>* {
+    margin-bottom: 0.2rem;
+}
+
+.social-media i {
+    font-size: 24px;
+    color: rgb(31, 6, 172);
+    padding: .5em;
+    background-color: hsla(216, 49%, 59%, 0.466);
+    border-radius: 50%;
+    margin: 0.3rem;
 }
