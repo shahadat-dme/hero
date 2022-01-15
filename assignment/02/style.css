@@ -192,6 +192,24 @@ hr {
     align-items: center;
 }
 
+.collection-list {
+    margin: 5px;
+    padding: 2px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 30px rgba(196, 148, 148, 0.726);
+    margin-bottom: 40px;
+}
+
+.collection-list img {
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -214,8 +232,9 @@ hr {
 .feature {
     display: flex;
     width: 90%;
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 50px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 .half-feature {
@@ -231,6 +250,101 @@ hr {
     padding: 10px 30px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+/* contact */
+
+.form {
+    background: url('./assets/2-min.jpeg') no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 300px;
+    width: 90%;
+}
+
+.form-content {
+    position: relative;
+    margin-left: 40%;
+    transform: translate(-30%, -65%);
+    max-width: 870px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-content h1 {
+    color: #c5ecfd;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 48%;
+}
+
+.input-fields .input,
+.msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+}
+
+::-webkit-input-placeholder {
+    color: #c5ecfd;
+}
+
+::-moz-placeholder {
+    color: #c5ecfd;
+}
+
+:-ms-input-placeholder {
+
+    color: #c5ecfd;
+}
+
+.form-btn {
+    background-image: linear-gradient(hsla(335, 96%, 43%, 0.937), hsl(268, 100%, 64%));
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .msg textarea {
+        height: 80px;
+    }
+
+    .input-fields,
+    .msg {
+        width: 100%;
+    }
 }
 
 /* footer */
