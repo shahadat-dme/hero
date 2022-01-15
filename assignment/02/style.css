@@ -170,10 +170,10 @@ label.logo {
         flex-direction: column-reverse;
     }
 
-    /* .collect {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    } */
+    .collection {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .feature {
         flex-direction: column-reverse;
@@ -198,7 +198,7 @@ hr {
 }
 
 /* collect */
-.collection-title h1 {
+.collection h1 {
     display: flex;
     font-weight: 700;
     margin: 75px 50px;
@@ -241,9 +241,15 @@ hr {
     color: hsl(60, 36%, 78%);
 }
 
-@media screen and (min-width: 577px) and (max-width: 800px) {
-    .collect {
-        flex-direction: column-reverse;
+@media screen and (min-width: 568px) and (max-width: 720px) {
+    .collection {
+        width: 90%;
+        margin-left: 80px;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 }
 
