@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 0.781);
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+body {
+    background-color: #cfd1e1;
+}
+
+.title {
+    text-align: center;
+    padding: 50px 10px;
+    font-size: 40px;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    color: rgb(65, 65, 65);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.shadow {
+    position: absolute;
+    width: calc(100% + 50px);
+    height: 300px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent, transparent);
+    pointer-events: none;
+    top: 0;
+    left: -50px;
+    transform: skew(45deg);
+    transform-origin: top;
+}
+
+.shadow:before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #cfd1e1;
+    z-index: 1;
+}
+
+.searchbox {
+    position: relative;
+    width: 72px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+
+.searchbox:hover {
+    width: 400px;
+}
+
+.searchbox:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(#fff, #fff, #e3e3e3);
+    filter: blur(1px);
+}
+
+.searchbox:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 10px;
+    height: 100%;
+    z-index: 1;
+    background: #9d9d9d;
+    filter: blur(1px);
+}
+
+.searchbox input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    background: linear-gradient(#dbdae1, #a3aaba);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+        15px 15px 15px rgba(0, 0, 0, 0.1),
+        20px 20px 15px rgba(0, 0, 0, 0.1),
+        30px 30px 15px rgba(0, 0, 0, 0.1),
+        inset 1px 1px 2px #fff;
+
+}
+
+.searchbox input::placeholder,
+.searchbox input {
+    color: transparent;
+}
+
+.searchbox:hover input::placeholder,
+.searchbox:hover input {
+    color: rgba(85, 85, 85, 0.781);
+}
+
+ion-icon {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
