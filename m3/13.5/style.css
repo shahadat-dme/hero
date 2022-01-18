@@ -1,0 +1,10 @@
+@media only screen and (min-width:576px) and (max-width:992px) {
+    .dt {
+        /* background-color: rgb(139, 0, 104); */
+        justify-content: centers;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        /* height: 700px; */
+    }
+}

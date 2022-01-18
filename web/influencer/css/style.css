@@ -1,0 +1,452 @@
+/* Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&display=swap');
+/* Import Font Awsome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* My Custom CSS Var */
+:root{
+    --color-primary:#ff014f;
+}
+/* For All Section Style */
+body{
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ECF0F3;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.3em;
+}
+h3{
+    font-size: 1.5em;
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.color-primary{
+    color: var(--color-primary);
+}
+hr {
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c0c4c6));
+}
+
+/* hover-underline-animation */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ /*===============================================*\
+  *= Header Area  Section | Code Start From Here =*
+ \*===============================================*/
+
+/**************** Top-Header Start ****************/
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name h2{
+    transition: .3s;
+}
+.brand-name h2:hover, .menu li a:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    color:var(--color-primary);
+}
+.menu li a{
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.menu li a.active{
+    text-decoration: underline;
+}
+.menu li a:hover{
+    /* color: white;
+    background-image: linear-gradient(
+        45deg, #F0001F, #ff004f); */
+    font-size: 1.1em;
+    color: #ff014f;
+    background: linear-gradient(45deg, #FFFFFF 0%, #F4F4F4 50%, #FFFFFF 100%);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.15);
+}
+/************** Bottom-Header Start ***************/
+.bottom-header{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature h1{
+    font-size: 3.5em;
+    transition: .3s;
+}
+.feature h1:hover{
+    color: var(--color-primary);
+    font-size: 3.6em;
+}
+.feature p{
+    margin: 20px 0px;
+}
+.btn-primary{
+    color: white;
+    background-color: var(--color-primary);
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 15px 0px;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color:white;
+    outline: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+.move-right:hover .fa{
+    transform: translateX(15px);
+}
+.feature-img{
+    background-image: url('../img/Circle-design.svg');
+    border: 1px solid #c0c4c6;
+    border-radius: 50%;
+    transition: 1s;
+    margin-left: 20px;
+}
+.feature-img:hover{
+    transform: rotate(40deg);
+}
+
+/* -------- Camera Light Effict Start ----------- */
+
+#light-effect{
+    position: absolute;
+    transform: rotate(158deg);
+    height: 300px;
+    width: 100%;
+    z-index: 100;
+    display: none;
+} 
+#wrapper:hover #light-effect{
+    display: inline-block;
+    left: -35%;
+    transition-delay: .5s;
+    top: 400px;
+}
+#child-a:hover #light-effect{
+    display: none;
+}
+
+/* --------- Camera Light Effict End ------------ */
+
+ /*===============================================*\
+  *== Header Area  Section | Code End From Here ==*
+ \*===============================================*/
+
+
+ /*===============================================*\
+  *== Main Area  Section | Code End From Here ==*
+ \*===============================================*/
+.all-product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+}
+.single-product{
+    border: 20px solid white;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #FFFFFF 0%, #F4F4F4 50%, #FFFFFF 100%);
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.15);
+}
+.single-product img{
+    width: 100%;
+    height: 250px;
+}
+.product-details{
+    padding: 10px;
+}
+.product-details h3{
+    font-weight: 400;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.star{
+    color: tomato;
+}
+.single-product p{
+    margin: 10px 0px;
+}
+/* See More button  */
+.btn-simple{
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 15px 0px;
+    transition: 0.2s;
+    text-align: right;
+    margin-right: 10%;;
+}
+.btn-simple:hover{
+    color: var(--color-primary);
+}
+.btn-simple .move-right:hover .fa{
+    transform: translateX(15px);
+}
+/*===============================================*\
+ *== Contact Area  Section | Code Start From Here ==*
+\*===============================================*/
+.contact{
+    text-align: center;
+}
+.contact h2{
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.contact h2:hover{
+    color: var(--color-primary);
+}
+.contact input{
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 30%;
+}
+textarea{
+    height: 100px;
+    border: 1px solid var(--color-primary);
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 64%;
+}
+
+/*===============================================*\
+ *== Footer Area Section| Code Start From Here ==*
+\*===============================================*/
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 60px;
+ }
+footer h2:hover{
+    color: var(--color-primary);
+    transition: .5s;
+}
+footer p{
+    margin: 10px 0px;;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+footer ul{
+    padding: 0;
+}
+footer a{
+    font-size: 2em;
+    color: whitesmoke;
+    margin: 0 10px;
+}
+.fa-facebook-square:hover{
+    color: #4267B2;
+    
+}
+.fa-github-square:hover{
+    color: #0A0825;
+    background: white;
+}
+.fa-linkedin-square:hover{
+    color:#3171AC;
+}
+.fa-youtube-square:hover{
+    color: #E33122;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .top-header{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        padding: 0;
+        text-align: center;
+    }
+    nav li{
+        display: block;
+    }
+    .feature h1{
+        font-size: 2em;
+    }
+    .feature-img img{
+        width: 250px;
+    }
+    .all-product{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    .bottom-header {
+       flex-direction: column;
+    }
+    #light-effect{
+        display: none;
+    }
+    .all-product{
+        gap: 30px;
+    }
+    .single-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-product img{
+        width: 70%;
+    }
+    .btn-simple {
+        margin: 0 auto;
+        width: 140px;
+    }
+    .container {
+        width: 90%;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    #child-a{
+        text-align: center;
+    }
+    .feature h1{
+        font-size: 2em;
+    }
+    #wrapper:hover #light-effect{
+        display: none;
+    }
+    .feature-img img{
+        width: 250px;
+    }
+    .container {
+        width: 90%;
+    }
+    .all-product {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single-product img {
+        width: 100%;
+    }
+    .btn-simple {
+        margin: 0 auto;
+        width: 140px;
+    }
+    .contact h2{
+        font-size: 2em;
+    }
+    .contact input{
+        width: 40%;
+    }
+    .contact input {
+        width: 90%;
+    }
+    textarea{
+        width: 90%;
+    }
+    hr {
+        margin: 0px 0px 50px 0px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1024px) {
+    #wrapper:hover #light-effect {
+        top: 320px;
+        left: -400px
+    }
+    .feature-img img{
+        width: 300px;
+    }
+    .feature h1{
+        font-size: 2.5em;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    #wrapper:hover #light-effect{
+        top: 350px;
+    }
+}
+@media only screen and (min-width: 1441px) {
+    #wrapper:hover #light-effect {
+        top: 580px;
+        left: -510px;
+    }
+    textarea{
+        height: 200px;
+        width: 62%;
+    }
+    .single-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-product img{
+        width: 60%;
+    }
+}
+
+
+/*===============================================*\
+ *=+=+=+=+=+=+=+=+=+= CSS END =+=+=+=+=+=+=+=+=+=*
+\*===============================================*/
