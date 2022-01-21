@@ -11,7 +11,7 @@
   <body>
     <header>
       <!-- Navbar  -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <img src="./images/logo.png" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,13 +23,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#backpack">Backpack</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -136,12 +136,13 @@
             </div>
           </div>
       </section>
+
       <!-- Shoes -->
-      <section class="container">
+      <section class="container" id="shoes">
         <h2>Shoes</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 shadow-lg">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 border-0">
+            <div class="card h-100 border-0 shadow-lg">
               <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Supply 350</h5>
@@ -185,12 +186,12 @@
         </div>
       </section>
 
-      <section class="container my-5">
-        <h2>Bug</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4 shadow-lg">
+      <section class="container my-5 " id="backpack">
+        <h2>Bags</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 border-0">
-              <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card h-100 border-0 shadow-lg">
+              <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Supply 350</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -204,7 +205,7 @@
           </div>
           <div class="col">
             <div class="card h-100 border-0 shadow-lg">
-              <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+              <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">White Max</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -218,7 +219,7 @@
           </div>
           <div class="col">
             <div class="card h-100 border-0 shadow-lg">
-              <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+              <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Nike 360</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -230,11 +231,22 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Subscribe -->
+      <section class="container bg-info d-flex justify-content-center align-items-center rounded-3" style="height: 300px;" id="subscribe"> 
+        <div>
+          <h1>Let's Stay In Touch</h1>
+          <p>Get Updates on Sales, Specials and More</p>
+          <input type="text" placeholder="Your Email">
+          <br>
+          <button class="btn btn-warning">Submit</button>
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="mt-5 text-center">
+      <p><small>@2022 Panda Commerece All Rights Reserved Shahadat, Noakhali.</small></p>
     </footer>
 
 
