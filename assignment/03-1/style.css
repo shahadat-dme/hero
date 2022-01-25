@@ -1,0 +1,24 @@
+.fa-apple-pay {
+    background-color: darkblue;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: -2px;
+}
+
+.fa-google-play {
+    background-color: rgb(139, 0, 42);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px !important;
+}
+
+.demo {
+    margin-right: 200px;
+}
