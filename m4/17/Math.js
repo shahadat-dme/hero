@@ -8,10 +8,14 @@ var mul = onion * egg
 var div = onion / egg
 var percent = onion % egg
 
+
 //Mathematical operation shorthand
 
 // price = price + 20
-price += 20
+price += 20;
+// price -= 20
+// price++;
+// price --;
 
 console.log(sum)
 console.log(sub)
