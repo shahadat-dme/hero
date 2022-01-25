@@ -10,4 +10,5 @@ var t = f + l
 console.log(typeof tShirt)
 console.log(typeof tPrice)
 console.log(typeof isRaining)
-console.log(t.toFixed(2))
+console.log(t.toFixed(2)) // string
+console.log(parseFloat(t.toFixed(2)))
