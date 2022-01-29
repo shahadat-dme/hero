@@ -15,8 +15,9 @@ var mobile = {
 
 // console.log(mobile.price)
 
-mobile.price = 15000;
-console.log(mobile)
+// mobile.price = 15000;
+// console.log(mobile)
+console.log(mobile["color"]);
 
 
 // property
