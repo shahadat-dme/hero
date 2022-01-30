@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\m4\\19\\parameter.js"
+            "program": "${file}"
         }
     ]
 }
