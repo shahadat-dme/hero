@@ -13,3 +13,7 @@ partners.pop()
 
 
 // function
+
+// function peramiter
+
+// Object
