@@ -12,3 +12,8 @@ function sum(i){
     return i + sum(--i)
 }
 console.log(sum(7));
+
+// i + sum(--i)
+// 7 + sum(6)
+// 7 + 6 + sum(5)
+// 7 + 6 + 5 + sum(4)
