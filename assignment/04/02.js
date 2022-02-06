@@ -1,15 +1,15 @@
-function pandaCost(singara, somucha, jilapi) {
+function pandaCost(singaraQuantity, somuchaQuantity, jilapiQuantity) {
     const singaraPrice = 7;
     const somuchaPrice = 10;
     const jilapiPrice = 15;
-    // error handaling
-    const items = errorHandale(singara, somucha, jilapi);
-  
-    if (items == false) {
-      return (
-        singara * singaraPrice + somucha * somuchaPrice + jilapi * jilapiPrice
-      );
-    } else {
-      return items;
-    }
-  }
+
+    const TotalSingaraPrice = singaraQuantity * singaraPrice;
+    const TotalSomuchaPrice = somuchaQuantity * somuchaPrice;
+    const TotalJilapiPrice = jilapiQuantity * jilapiPrice;
+
+    const totalCost = TotalSingaraPrice + TotalSomuchaPrice + TotalJilapiPrice
+    return totalCost
+}
+
+const total = pandaCost(0,1,1)
+console.log(total);
