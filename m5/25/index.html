@@ -9,7 +9,26 @@
   </head>
   <body>
     <h1>What is Event, different types of event in web</h1>
-    <button onclick="alert('Hello World!')">Click</button>
-    <button onclick="console.log(28)">Click</button>
+    <!-- <button onclick="alert('Hello World!')">Click</button> -->
+    <!-- <button onclick="console.log(28)">Click</button> -->
+
+    <button onclick="document.body.style.backgroundColor='gray'">Click Me</button>
+    <button onclick="makeRed()">Click Me</button>
+    <button id="make-blue-button">Click Me</button>
+    <button id="make-green-button">Click Me</button>
+    <button id="make-cyan-button">Click Me</button>
+    <button id="make-hotpink-button">Click Me</button>
+    <button id="make-lightblue-button">Click Me</button>
+
+    <p id="clicking-method"></p>
+    <button onclick="handleJustFunctionClick()">Just Functin</button>
+    <button id="handle-event">Direct Event Listener</button>
+
+    <input id="name-field" type="text">
+    <button id="update-name">update</button>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
