@@ -14,19 +14,19 @@
     <main>
       <section>
         <article>
-          <h2>Awesome Blog-1</h2>
+          <h2 class="blog-heading">Awesome Blog-1</h2>
           <p>Lorem5
             Evidence suggests Alexander the Great's march of global conquest came to a halt when he heard the stories of a great nation east of the Ganges - Gangaridai - and its massive army of war elephants. Chittagong used to provide elephants and trainers to the British Empire, the Mughal Empire and even the Roman Empire.
           </p>
         </article>
         <article>
-          <h2>Awesome Blog-2</h2>
+          <h2 class="blog-heading">Awesome Blog-2</h2>
           <p>Lorem5
             Evidence suggests Alexander the Great's march of global conquest came to a halt when he heard the stories of a great nation east of the Ganges - Gangaridai - and its massive army of war elephants. Chittagong used to provide elephants and trainers to the British Empire, the Mughal Empire and even the Roman Empire.
           </p>
         </article>
         <article>
-          <h2>Awesome Blog-3</h2>
+          <h2 id="three">Awesome Blog-3</h2>
           <p>Lorem5
             Evidence suggests Alexander the Great's march of global conquest came to a halt when he heard the stories of a great nation east of the Ganges - Gangaridai - and its massive army of war elephants. Chittagong used to provide elephants and trainers to the British Empire, the Mughal Empire and even the Roman Empire.
           </p>
@@ -50,6 +50,20 @@
       const heading = document.getElementsByTagName("h1")
       for(const h1 of heading){
         console.log(h1.innerText);
+      }
+      document.getElementById("three").style.color = "cyan"
+      document.getElementById("three").style.backgroundColor = "blue"
+      const third = document.getElementById("three")
+      third.style.padding = '25px'
+      third.innerText = "Title Update"
+      third.style.marginLeft = "10px"
+
+      //class
+      const blogs = document.getElementsByClassName("blog-heading")
+      for(const blog of blogs){
+        // console.log(blog);
+        blog.style.border = "2px solid orange"
+        blog.style.borderRadius = "5px"
       }
 </script>
 
