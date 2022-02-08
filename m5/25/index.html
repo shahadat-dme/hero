@@ -24,9 +24,32 @@
     <button onclick="handleJustFunctionClick()">Just Functin</button>
     <button id="handle-event">Direct Event Listener</button>
 
+    <p id="input"></p>
     <input id="name-field" type="text">
     <button id="update-name">update</button>
 
+    <!-- comment box and display -->
+    <section class="comment">
+      <h2>Your Comment</h2>
+      <div id="comment-container">
+        <p>Note, the way I wrote the rules for coloring while doing this project differs slightly from the real Wordle when it comes to multiple letters. For example, suppose in a word like "woody" the first 'o' is correct, hence green, then in the real Wordle that second 'o' would be grey, whereas the way I wrote things the rule as simply any letter which is in the word somewhere, but not in the right position, will be yellow.</p>
+        <p>Note, the way I wrote the rules for coloring while doing this project differs slightly from the real Wordle when it comes to multiple letters. For example, suppose in a word like "woody" the first 'o' is correct, hence green, then in the real Wordle that second 'o' would be grey, whereas the way I wrote things the rule as simply any letter which is in the word somewhere, but not in the right position, will be yellow.</p>
+      </div>
+      <div>
+        <p></p>
+        <textarea name="" id="new-comment" cols="60" rows="4"></textarea>
+        <br>
+        <button id="submit-comment">POST</button>
+      </div>
+    </section>
+
+    <!-- More Event -->
+    <h2>More Events</h2>
+    <section>
+      <h3 id="secret-info">Secret Information</h3>
+      <input id="delete-confirm" type="text" placeholder="Please Type Delete">
+      <button id="delete-btn" disabled>Delete</button>
+    </section>
 
 
     <script src="script.js"></script>
