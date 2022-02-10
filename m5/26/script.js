@@ -20,5 +20,4 @@ document.getElementById('login-submit').addEventListener('click',function(){
         // console.log('Valid User');
         window.location.href = 'banking.html'
     }
-
 })
