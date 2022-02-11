@@ -48,4 +48,3 @@ document.getElementById('withdraw-button').addEventListener('click',function(){
         console.log('Your Balance Not sufficient');
     }
 })
-

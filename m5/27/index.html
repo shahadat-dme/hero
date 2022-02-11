@@ -8,5 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <p id="c-balance"> Current Balance : 300 </p>
+    <input id="input" type="text">
+    <button onclick="add()" id="add-btn"> Add Money </button>
+    <script>
+      function add(){
+ const cbalance= document.getElementById("c-balance").innerText;
+ const inputValue= document.getElementById("input").value;
+ console.log(cbalance+inputValue)
+ }
+    </script>
   </body>
 </html>
