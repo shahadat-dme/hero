@@ -13,4 +13,12 @@ function megaFriend(friends){
 
 const friends = ['dipok','sobuj','jahid','safayet']
 const myBuddy= megaFriend(friends)
-console.log(myBuddy);
+// console.log(myBuddy);
+if(friends.indexOf('sobuj') != -1){
+    console.log('Lion exists');
+}else{
+    console.log("Does't exists");
+}
+if(friends.includes('dipok')){
+    console.log('includes');
+}
