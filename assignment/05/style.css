@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: aqua;
+}
+
+.calc {
+    background-color: brown;
+    margin: 10px;
+    padding-left: 10px;
+    height: 100vh;
+    width: 50%;
+}
+
+.ex {
+    background-color: blue;
+    padding-left: 8px;
+}
+
+#food-input {
+    /* display: block; */
+    /* position: absolute; */
+    width: 80vh;
+}
+
+#clothes-input {
+    width: 90%;
+}
+
+#rent-input {
+    width: 80%;
+}
