@@ -6,6 +6,7 @@ function getInputValue(inputId){
     inputField.value = '';
     return amountValue;
 }
+
 function updateTotalField(TotalFieldId,Amount){
     const TotalElement = document.getElementById(TotalFieldId);
     const TotalText = TotalElement.innerText;
