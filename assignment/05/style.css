@@ -1,35 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    display: flex;
-    background-color: aqua;
+/* Header Section */
+header {
+    background-color: #0572ca;
+    min-height: 80px;
 }
 
-.calc {
-    background-color: brown;
-    margin: 10px;
-    padding-left: 10px;
-    height: 100vh;
-    width: 50%;
+/* Main Section */
+.formData {
+    background-color: rgba(169, 169, 169, 0.2);
 }
 
-.ex {
-    background-color: blue;
-    padding-left: 8px;
+#calculationButton {
+    background-color: hsl(202, 91%, 46%);
+    color: #fff;
+    width: 30%;
 }
 
-#food-input {
-    /* display: block; */
-    /* position: absolute; */
-    width: 80vh;
-}
-
-#clothes-input {
-    width: 90%;
-}
-
-#rent-input {
-    width: 80%;
+/* footer section */
+footer {
+    min-height: 80px;
+    background-color: darkcyan;
 }
