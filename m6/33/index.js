@@ -1,3 +1,6 @@
 const user = {id: 101, name: "Shahadat", job: 'Student'}
-console.log("Hello");
+
+const stringified = JSON.stringify(user)
+
 console.log(user);
+console.log(stringified);
