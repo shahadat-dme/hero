@@ -5,4 +5,5 @@
 # with id: https://picsum.photos/id/1/200/300
 # API: https://restcountries.com/
 # https://www.themealdb.com/
+# https://api.chucknorris.io/
 # https://www.devresourc.es/category/public-apis/all
