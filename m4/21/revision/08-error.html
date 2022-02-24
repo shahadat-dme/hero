@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Error Handling Basics</h1>
+    <ul class="tsummary">
+        <li>recovering from unexpected situations (errors)</li>
+    </ul>
+    <hr class="hr">
+    <!-- <div id="myBox1" class="box"></div> //wrong -->
+    <div id="myBox" class="box"></div>
+
+    <script>
+        // function changeBackgroundColor(element, color){
+        //     element.style.background = color;
+        // }
+        // const myBox = document.getElementById("myBox");
+        // changeBackgroundColor(myBox, "blue");
+        // prompt("What is your name?")
+
+        function changeBackgroundColor(element, color){
+            element.style.background = color;
+        }
+        const myBox = document.getElementById("myBox");
+        try{
+            changeBackgroundColor(myBox, "blue");
+        }catch(e){
+            // console.log(e);
+            console.dir(e);
+        }finally{
+            console.log(100);
+        }
+        prompt("What is your name?")
+    </script>
+</body>
+</html>
