@@ -1,4 +1,5 @@
 // null means nothing or kicui nai, undefined means not set or define anything
+
 // let first;
 // console.log(first);
 

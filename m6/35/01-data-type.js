@@ -4,6 +4,8 @@ console.log(typeof a);
 let b = "Shahadat"
 console.log(typeof b);
 
+const x = {name: "Shahadat", age: 28}
+console.log(typeof x); 
 /*
 Data Type
 1. number
@@ -13,6 +15,7 @@ Data Type
 5. null
 6. object
 7. symbol
+
 Primitive
 1. number
 2. string

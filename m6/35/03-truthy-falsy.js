@@ -3,10 +3,10 @@
 // const x = false;
 // const x = 4;
 // const x = -4;
-// const x = 0;
+const x = 0;  //
 // const x = "Shahadat";
 // const x = null;
-const x = undefined;
+// const x = undefined;
 // const x = [];
 // const x = {};
 // const x = parseInt('Hello');
