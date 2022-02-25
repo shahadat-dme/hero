@@ -6,11 +6,11 @@
 // const x = 0;
 // const x = "Shahadat";
 // const x = null;
-// const x = undefined;
+const x = undefined;
 // const x = [];
 // const x = {};
 // const x = parseInt('Hello');
-const x = ('');
+// const x = ('');
 if(x){
     console.log('variables is truthy');
 }else{
