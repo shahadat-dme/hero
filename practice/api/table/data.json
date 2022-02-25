@@ -1,0 +1,46 @@
+{
+    "headers":[
+        "User ID",
+        "Name",
+        "Occupation",
+        "Age"
+    ],
+    "rows":[
+        [
+        20012,
+        "Dom",
+        "Web Developer",
+        34
+    ],
+    [
+        2220,
+        "JS",
+        "React",
+        28
+    ],
+    [
+        77943,
+        "Robert",
+        "Gardener",
+        24
+    ],
+    [
+        20012,
+        "Dom",
+        "Web Developer",
+        34
+    ],
+    [
+        20012,
+        "Dom",
+        "Web Developer",
+        34
+    ],
+    [
+        20012,
+        "Dom",
+        "Web Developer",
+        34
+    ]
+]
+}
