@@ -2,8 +2,8 @@ const kibria = {
     id: 102,
     money: 70000,
     name: 'Kibria',
-    treatDey: function(expense){
-        this.money = this.money - expense;
+    treatDey: function(expense, boksis, tax){
+        this.money = this.money - expense - boksis, tax;
         console.log(this);
         return this.money;
     }
@@ -20,12 +20,8 @@ const heroGalam = {
     money: 5000,
     name: 'Hero Galam'
 }
-// student.treatDey(1000)
 
-const heroTreatDey = kibria.treatDey.bind(heroBalam);
+// kibria.treatDey.call(heroBalam,1504)
+// kibria.treatDey.call(heroBalam,1804,95,78)
 
-heroTreatDey(10);
-heroTreatDey(1710);
-
-const heroGalamTreatDey = kibria.treatDey.bind(heroGalam);
-heroGalamTreatDey(740);
+kibria.treatDey.apply(heroBalam,[1804,95,78])
