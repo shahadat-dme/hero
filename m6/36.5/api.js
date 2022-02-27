@@ -37,9 +37,6 @@ const displayMeals = meals => {
     
     const container = document.getElementById('meals');
     container.textContent = '';
-    // if(!meals){
-    //     return 'You have no meals'
-    // }
     meals?.forEach(meal => {
         const div = document.createElement('div');
         div.innerHTML = `
