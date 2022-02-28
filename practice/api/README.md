@@ -10,3 +10,6 @@
 # https://api.chucknorris.io/
 # https://www.devresourc.es/category/public-apis/all
 # https://github.com/public-apis/public-apis
+
+
+# https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
