@@ -50,6 +50,15 @@ const loadCountryByName = name => {
     // console.log(url);
     fetch(url)
     .then(res => res.json())
-    .then(data => console.log(data[0]))
+    // .then(data => console.log(data))
+    .then(data => displayCountryDetail(data[0]))
+}
 
+const displayCountryDetail = country => {
+const countryDiv = document.getElementById('country-detail');
+countryDiv.innerHTML = `
+    <h3>${country.name}</h3>
+    <p>Population: ${country.population}</p>
+    <img width="250" src="${country.flag}">
+`
 }
