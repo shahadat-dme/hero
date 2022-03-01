@@ -26,6 +26,11 @@ const displayCountries = counties => {
         const div = document.createElement('div');
         div.classList.add('countryList')
         
+        // div.innerHTML = `
+        // <h3>${country.name}</h3>
+        // <p>${country.capital}</p>
+        // `;
+
         const h3 = document.createElement('h3');
         h3.innerText = country.name;
         div.appendChild(h3)

@@ -29,7 +29,7 @@ const displayCountries = counties => {
         div.innerHTML = `
         <h3>${country.name}</h3>
         <p>${country.capital}</p>
-        <button onclick="loadCountryByName('Afghanistan')">Details</button>
+        <button onclick="loadCountryByName('${country.name}')">Details</button>
         `
 
         // const h3 = document.createElement('h3');
@@ -45,5 +45,11 @@ const displayCountries = counties => {
 }
 
 const loadCountryByName = name => {
-    console.log(name);
+    // console.log(name);
+    const url = `https://restcountries.com/v2/name/${name}`
+    // console.log(url);
+    fetch(url)
+    .then(res => res.json())
+    .then(data => console.log(data[0]))
+
 }
