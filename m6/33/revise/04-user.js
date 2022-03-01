@@ -23,3 +23,30 @@ function loadComment(){
   .then(res => res.json())
   .then(data => console.log(data));
 }
+function loadAlbums(){
+  fetch('https://jsonplaceholder.typicode.com/albums')
+  .then(res => res.json())
+  .then(data => console.log(data));
+}
+function loadPhotos(){
+  fetch('https://jsonplaceholder.typicode.com/photos')
+  .then(res => res.json())
+  .then(data => console.log(data));
+}
+function loadTodos(){
+  fetch('https://jsonplaceholder.typicode.com/todos')
+  .then(res => res.json())
+  .then(data => console.log(data));
+}
+
+
+
+function loadUserDisplay(){
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(data => UserDisplay(data))
+}
+
+function UserDisplay(data){
+  console.log(data);
+}
