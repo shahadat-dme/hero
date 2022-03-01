@@ -98,6 +98,13 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', {
 
 {/* <div id="posts"></div> */} // html code
 
+{/* <button onclick="AddElement()"></button>
+
+function AddElement(){
+//
+}
+AddElement(); */}
+
 // const postContainer = document.getElementById('id')
 // const div = document.createElement('div')
 // div.classList.add('post')
