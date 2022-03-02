@@ -1,7 +1,9 @@
+document.getElementById('error-message').style.display ='none'
 const searchPhone = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     searchField.value = '';
+    document.getElementById('error-message').style.display ='none'
     if(searchText === '') {
       alert('please display write something');
     }
@@ -10,13 +12,16 @@ const searchPhone = () => {
     fetch (url)
     .then(res => res.json())
     .then(data =>displaySearchResult(data.data))
+    .catch(error => displayError(error))
     } 
   }
-  
+  const displayError = error => {
+    document.getElementById('error-message').style.display ='block'
+  }
   const displaySearchResult = phones => {
     const searchResult = document.getElementById('search-result');
     phones.forEach(phone => {
-      // console.log(phone)
+      console.log(phone)
       const div = document.createElement('div');
       div.classList.add('col');
       div.innerHTML = `
