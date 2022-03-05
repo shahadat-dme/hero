@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Phone</title>
+    <!-- FavIcon -->
+    <link
+      rel="shortcut icon"
+      href="images/mobile-phone-landing-page-flat-circle-icon-vector-9327436.jpg"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+      #phone-container .card,
+      #rest-phone .card {
+        height: 465px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container px-0">
+          <a onclick="defoultValue()" class="navbar-brand" href="#"
+            >Smart Phones</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  onclick="defoultValue()"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="loadApi('apple')" class="nav-link" href="#"
+                  >Apple</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="loadApi('samsung')" class="nav-link" href="#"
+                  >Samsung</a
+                >
+              </li>
+              <li class="nav-item">
+                <a onclick="loadApi('oppo')" class="nav-link" href="#">Oppo</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="loadApi('huawei')" class="nav-link" href="#"
+                  >Huawei</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container px-0">
+      <!-- search area -->
+      <h3 class="text-center text-success my-4">Search your favarite Phone</h3>
+      <div class="d-flex">
+        <input
+          id="search-text"
+          class="form-control me-2"
+          type="search"
+          placeholder="Write your Phone name"
+        />
+        <button
+          onclick="loadPhone()"
+          class="btn btn-outline-success"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+
+      <!-- Show Error message area -->
+      <div id="spinner" class="text-center d-none">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <h4 id="error" class="text-center text-danger my-2"></h4>
+
+      <!-- Show single phone Details -->
+      <div id="single-phone-container" class="mb-5 mx-auto my-4"></div>
+
+      <!-- Show phones -->
+      <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+      <!-- remaining phones -->
+      <div id="taggle-on-button" class="mx-auto text-center my-5 d-none">
+        <button onclick="showRemaining()" class="btn btn-success">
+          Show More
+        </button>
+      </div>
+      <div id="taggle-of-button" class="mx-auto text-center my-5 d-none">
+        <button onclick="coloseRemaining()" class="btn btn-success">
+          Show Less
+        </button>
+      </div>
+      <div
+        id="rest-phone"
+        class="row row-cols-1 row-cols-md-3 g-4 d-none"
+      ></div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
