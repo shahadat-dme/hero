@@ -27,5 +27,5 @@ let add1 = add("2",3)
 // console.log(b);
 
 
-const colors = {mango: 'green', grapes: 'black', organe: 'yellow'};
-console.log(colors[grapes])
+// const colors = {mango: 'green', grapes: 'black', organe: 'yellow'};
+// console.log(colors[grapes])
