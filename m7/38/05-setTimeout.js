@@ -2,6 +2,7 @@
 
 console.log('Hello A');
 
+// setTimeout(() => console.log('aasdd'),2000)
 // setTimeout(() => console.log("Asynchronous 3"),3000)
 
 // setTimeout(() => {

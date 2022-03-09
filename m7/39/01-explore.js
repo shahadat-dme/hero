@@ -1,4 +1,6 @@
-const name = 15;
+// const name = 15;
+// document.getElementById('name')
+
 const student = {
     name: 'Shahadat',
     frined: 'Dipok',
@@ -9,4 +11,3 @@ const student = {
 };
 
 student.makeMovie('Din the day')
-// document.getElementById('name')
