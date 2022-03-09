@@ -8,3 +8,10 @@ const getCookie = name => {
         return cookieNameValue[1];
     }
 }
+
+// document.cookie
+// document.cookie.split(';')
+// document.cookie.split(';').map(c => console.log(c))
+// document.cookie.split(';').map(c => console.log(c.split('=')))
+// document.cookie.split(';').map(c => c.includes('country'))
+// document.cookie.split(';').map(c => c.includes('value'))
