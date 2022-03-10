@@ -4,3 +4,7 @@
 # https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 # https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
+
+# https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility
+
+# https://developer.chrome.com/docs/devtools/console/api/
