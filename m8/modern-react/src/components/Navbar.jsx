@@ -8,7 +8,13 @@ const Navbar = () => {
                 <a href='/'>Home</a>
                 <a href='/about'>About</a>
                 <a href='/contact'>Contact</a>
-                <a href='/blog'>New Blog</a>
+
+                <a href='/blog' style={{
+                    color: "cyan",
+                    backgroundColor: "blue",
+                    borderRadius: "5px"
+                }}>New Blog</a>
+
             </div>
         </nav>
     )
