@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = () => {
+const ClickEvents = () => {
 
     const handleClick = () => {
         console.log("Hello!");
@@ -25,4 +25,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default ClickEvents;
