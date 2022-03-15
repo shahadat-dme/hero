@@ -18,6 +18,12 @@ function Templates() {
             <h3>{"Shahadat"}</h3>
             <h3>{Math.random() * 100}</h3>
             <a href={link}>Github</a>
+
+            <h2 href='/blog' style={{
+                color: "cyan",
+                backgroundColor: "blue",
+                borderRadius: "5px"
+            }}>New Blog</h2>
         </div>
     );
 }
