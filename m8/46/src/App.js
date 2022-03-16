@@ -1,11 +1,15 @@
 import './App.css';
 import React, { useEffect, useState } from 'react'
+import Person from './components/Person';
+import Header from './components/Header';
 
 function App() {
   
   return (
     <div className="App">
       <LoadCountries/>
+      <Person/>
+      <Header/>
     </div>
   );
 }
