@@ -2,6 +2,8 @@ import './App.css';
 // import React, { useEffect, useState } from 'react'
 import Person from './components/Person';
 import Header from './components/Header';
+// import Country from './components/Country/Country';
+import Countries from './components/Countries/Countries';
 
 function App() {
   
@@ -10,6 +12,8 @@ function App() {
       <Header/>
       {/* <LoadCountries/> */}
       <Person/>
+      {/* <Country/> */}
+      <Countries/>
     </div>
   );
 }

@@ -1,20 +1,36 @@
 import React, { useEffect, useState } from 'react'
+import Country from '../Country/Country'
+import './Countries.css'
 
-function Country() {
+function Countries() {
     const [countries, setCountries] = useState([])
+
     useEffect(() => {
         fetch('https://restcountries.com/v3.1/all')
             .then(res => res.json())
             .then(data => setCountries(data))
     }, [])
+
     return (
-        <div>
+        <>
             <h1>Country: {countries.length}</h1>
-            {
-                countries.map(country => console.log(country))
-            }
-        </div>
+            <div className='container'>
+                {
+                    countries.map(country =>
+                        <Country country={country}
+                        // name={country.name.common}
+                        // official={country.name.official}
+                        // area={country.area}
+                        // population={country.population}
+                        // capital={country.capital}
+                        // border={country.borders}
+                        // region={country.region}
+                        // flag={country.flag}
+                        />)
+                }
+            </div>
+        </>
     )
 }
 
-export default Country
+export default Countries
