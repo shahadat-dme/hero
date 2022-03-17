@@ -4,6 +4,7 @@ import Person from './components/Person';
 import Header from './components/Header';
 // import Country from './components/Country/Country';
 import Countries from './components/Countries/Countries';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
       <Person/>
       {/* <Country/> */}
       <Countries/>
+      <Footer/>
     </div>
   );
 }
