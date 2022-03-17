@@ -21,7 +21,7 @@ function Country(props) {
             <p>Capital: {props.country.capital}</p>
             <p>Border: {props.country.borders}</p>
             <p>Region: {props.country.region}</p>
-            <p>Flag: {props.country.flag}</p> */}
+            <p>Flag: {props.country.flags}</p> */}
 
         </div>
     )

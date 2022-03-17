@@ -4,3 +4,8 @@
     border: 2px solid salmon;
     border-radius: 8px;
 }
+
+.country img {
+    width: 220px;
+    height: 200px;
+}
