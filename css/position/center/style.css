@@ -1,0 +1,9 @@
+#outer {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#inner {
+    background-color: brown;
+    display: inline-block;
+}
