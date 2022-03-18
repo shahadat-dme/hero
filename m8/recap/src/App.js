@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import './App.css';
+import Users from './components/user/Users';
 
 function App() {
   return (
     <div className="App">
+      <Users/>
       <LoadPosts/>
       <District name="Noakhali" special="pansupari"/>
       <District name="Noakhali" special="pansupari"/>
@@ -20,6 +22,7 @@ function LoadPosts(){
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(res => res.json())
+    // .then(data => console.log(data))
     .then(data => setPosts(data))
   },[])
   return (
