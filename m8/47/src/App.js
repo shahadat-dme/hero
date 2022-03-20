@@ -1,4 +1,5 @@
 import './App.css';
+import Cosmetic from './components/Cosmetic/Cosmetic';
 import Cosmetics from './components/Cosmetics/Cosmetics';
 import Shoes from './components/Shoes/Shoes';
 // import Device from './components/Device/Device';
@@ -12,6 +13,7 @@ function App() {
       {/* <Device name="ph" price="780"/> */}
       {/* <Watch/> */}
       {/* <Dial/> */}
+      <Cosmetic/>
       <Cosmetics/>
       <Shoes/>
     </div>
