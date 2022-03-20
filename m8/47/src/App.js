@@ -1,5 +1,6 @@
 import './App.css';
 import Cosmetics from './components/Cosmetics/Cosmetics';
+import Shoes from './components/Shoes/Shoes';
 // import Device from './components/Device/Device';
 // import Dial from './components/Dial/Dial';
 // import Watch from './components/Watch/Watch';
@@ -12,6 +13,7 @@ function App() {
       {/* <Watch/> */}
       {/* <Dial/> */}
       <Cosmetics/>
+      <Shoes/>
     </div>
   );
 }
