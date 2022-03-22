@@ -5,18 +5,15 @@ import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-
     useEffect(() => {
-        const url = '../../fakeData/products.json'
-        // fetch(url)
-        fetch('data.json')
+        fetch('products.json')
             .then((res) => res.json())
-            .then(data => console.log(data))
+            // .then(data => console.log(data))
             .then(data => setProducts(data))
     }, []);
 
     const handleAddToCart = (product) => {
-        console.log(product);
+        // console.log(product);
         // do not do this: cart.push(product);
         const newCart = [...cart, product];
         setCart(newCart);
@@ -30,7 +27,7 @@ const Shop = () => {
                         key={product.id}
                         product={product}
                         handleAddToCart={handleAddToCart}
-                    ></Product>)
+                    />)
                 }
             </div>
             <div className="cart-container">
