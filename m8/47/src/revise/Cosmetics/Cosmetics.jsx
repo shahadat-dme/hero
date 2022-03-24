@@ -1,6 +1,6 @@
 import React from 'react'
 import Cosmetic from '../Cosmetic/Cosmetic'
-import './Cosmetic.css'
+import './Cosmetics.css'
 
 const Cosmetics = () => {
 
@@ -18,7 +18,7 @@ const Cosmetics = () => {
                 cosmetics.map(cosmetic => console.log(cosmetic))
             } */}
             {
-                cosmetics.map(cosmetic => <Cosmetic />)
+                cosmetics.map(cosmetic => <Cosmetic key={cosmetic.id} cosmetic={cosmetic} />)
             }
         </div>
     )

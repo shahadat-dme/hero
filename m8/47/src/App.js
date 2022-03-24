@@ -1,5 +1,9 @@
 import './App.css';
+// import ModuleImport from './revise/Module/ModuleImport';
 import Cosmetics from './revise/Cosmetics/Cosmetics';
+import Dokan from './revise/Dokan/Dokan';
+
+
 
 // import Cosmetic from './components/Cosmetic/Cosmetic';
 // import Cosmetics from './components/Cosmetics/Cosmetics';
@@ -23,7 +27,9 @@ function App() {
       {/* <Shoes/> */}
 
       {/* Revise */}
+      {/* <ModuleImport/> */}
       <Cosmetics/>
+      <Dokan/>
     </div>
   );
 }

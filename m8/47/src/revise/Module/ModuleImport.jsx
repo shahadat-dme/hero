@@ -1,7 +1,6 @@
 import React from 'react'
-// import add from '../../utilities/calculate';
-// import { add, multiply } from '../../utilities/calculate';
-// import './Cosmetic.css'
+import { add, multiply } from '../../utilities/calculate';
+
 
 
 const ModuleImport = () => {
