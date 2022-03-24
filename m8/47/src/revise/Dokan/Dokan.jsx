@@ -9,6 +9,7 @@ const Dokan = () => {
             .then(res => res.json())
             .then(data => setDokans(data))
     }, [])
+
     return (
         <div>
             <h1>Welcome to my Dokan store</h1>

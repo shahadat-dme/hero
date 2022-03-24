@@ -12,7 +12,7 @@ const Cosmetics = () => {
         { id: 5, name: 'Alitayu', price: 145600 },
     ]
     return (
-        <div>
+        <div className='product'>
             <h1>Welcome to my cosmetics store</h1>
             {/* {
                 cosmetics.map(cosmetic => console.log(cosmetic))
