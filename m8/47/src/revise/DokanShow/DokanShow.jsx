@@ -1,13 +1,18 @@
 import React from 'react'
+import { addToDb } from '../../utilities/fakedb2'
+
 
 const DokanShow = (props) => {
     const { name, price, id } = props.dokan
     const addToCart = (id) => {
-        console.log('Item Added', id);
+        // console.log('Item Added', id);
+        // localStorage.setItem(id, 1)
+        addToDb(id)
+
     }
     // const addToCartWithParam = () => addToCart(id)
     return (
-        <div>
+        <div className=''>
             <h1>{name}</h1>
             <h2>{price}</h2>
             <h3>{id}</h3>

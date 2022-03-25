@@ -1,5 +1,5 @@
 import React from 'react'
-import { addToDb } from '../../utilities/fakedb'
+// import { addToDb } from '../../utilities/fakedb'
 import './Cosmetic.css'
 
 const Cosmetic = (props) => {
@@ -17,8 +17,6 @@ const Cosmetic = (props) => {
             console.log('new item')
             localStorage.setItem(id, 1)
         }
-
-
     }
     // const addToCartWithParam = () => addToCart(id)
     return (

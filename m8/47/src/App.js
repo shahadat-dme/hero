@@ -1,6 +1,6 @@
 import './App.css';
 // import ModuleImport from './revise/Module/ModuleImport';
-import Cosmetics from './revise/Cosmetics/Cosmetics';
+// import Cosmetics from './revise/Cosmetics/Cosmetics';
 import Dokan from './revise/Dokan/Dokan';
 
 
@@ -28,7 +28,7 @@ function App() {
 
       {/* Revise */}
       {/* <ModuleImport/> */}
-      <Cosmetics/>
+      {/* <Cosmetics/> */}
       <Dokan/>
     </div>
   );
