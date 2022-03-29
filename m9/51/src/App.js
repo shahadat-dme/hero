@@ -1,14 +1,12 @@
 import './App.css';
+import Header from './tailwind/Header/Header';
 // import Bootstrap from './Bootstrap';
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
       {/* <Bootstrap/> */}
-      <h1>Hello Tailwind</h1>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <Header/>
     </div>
   );
 }
