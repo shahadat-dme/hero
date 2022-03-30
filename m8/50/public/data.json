@@ -1,0 +1,74 @@
+[
+    {   
+        "img": "./image/1.jpg",
+        "name": "Dog",
+        "id": 1,
+        "price": 750
+    },
+    {   
+        "img": "./image/2.jpg",
+        "name": "Mittu",
+        "id": 2,
+        "price": 740
+    },
+    {   
+        "img": "./image/3.jpg",
+        "name": "Popy",
+        "id": 3,
+        "price": 730
+    },
+    {   
+        "img": "./image/4.jpg",
+        "name": "Pappy",
+        "id": 4,
+        "price": 940
+    },
+    {   
+        "img": "./image/5.jpg",
+        "name": "Pappy 2",
+        "id": 5,
+        "price": 870
+    },
+    {   
+        "img": "./image/6.jpg",
+        "name": "Lop Dog",
+        "id": 6,
+        "price": 1220
+    },
+    {   
+        "img": "./image/7.jpg",
+        "name": "Cat",
+        "id": 7,
+        "price": 876
+    },
+    {   
+        "img": "./image/8.jpg",
+        "name": "Black Cat",
+        "id": 8,
+        "price": 970
+    },
+    {   
+        "img": "./image/9.jpg",
+        "name": "Cat -5",
+        "id": 9,
+        "price": 730
+    },
+    {   
+        "img": "./image/10.jpg",
+        "name": "Cat -8",
+        "id": 10,
+        "price": 640
+    },
+    {   
+        "img": "./image/11.jpg",
+        "name": "Adc",
+        "id": 11,
+        "price": 970
+    },
+    {   
+        "img": "./image/12.jpg",
+        "name": "Dog 12",
+        "id": 12,
+        "price": 450
+    }
+]

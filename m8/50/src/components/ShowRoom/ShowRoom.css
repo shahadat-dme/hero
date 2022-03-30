@@ -1,0 +1,59 @@
+.item {
+    width: 266px;
+    height: 510px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    position: relative;
+    padding: 8px;
+}
+
+.item img {
+    width: 256px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.item-info {
+    margin: 0 14px;
+}
+
+.item-info p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.item-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 7px;
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    background: #f05222;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-icon {
+    margin-left: 10px;
+    width: 24px;
+}
+
+.btn:hover {
+    background-color: rgb(235, 56, 24);
+}

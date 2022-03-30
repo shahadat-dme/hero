@@ -1,0 +1,7 @@
+.homeWork {
+    margin: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid salmon;
+}
