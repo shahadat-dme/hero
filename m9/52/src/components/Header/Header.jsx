@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CustomLink from '../CustomLink/CustomLink'
 
 const Header = () => {
@@ -13,6 +13,9 @@ const Header = () => {
                 {/* <Link to='friends'>Friends</Link> */}
                 <CustomLink to='/about'>About</CustomLink>
                 {/* <Link to='/about'>About</Link> */}
+                <Link to='/posts'>Posts</Link>
+                <br />
+                <Link to='countries'>Countries</Link>
             </nav>
         </div>
     )
