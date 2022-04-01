@@ -24,8 +24,6 @@ const Product = ({ product, handleAddToCart }) => {
                 </FontAwesomeIcon>
             </button>
         </div>);
-}
-
-    ;
+};
 
 export default Product;
