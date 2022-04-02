@@ -33,14 +33,14 @@ const Home = () => {
                         key={tShirt._id}
                         tShirt={tShirt}
                         handleAddToCart={handleAddToCart}
-                    ></TShirt>)
+                    />)
                 }
             </div>
             <div className="cart-container">
                 <Cart
                     handleRemoveFromCart={handleRemoveFromCart}
                     cart={cart}
-                ></Cart>
+                />
             </div>
         </div>
     );

@@ -9,9 +9,9 @@ const Father = ({ house, ornament }) => {
             <h4>Father</h4>
             <p>house: {house}</p>
             <div style={{ display: 'flex' }}>
-                <MySelf house={house}></MySelf>
-                <Brother house={house}></Brother>
-                <Sister house={house}></Sister>
+                <MySelf house={house} />
+                <Brother house={house} />
+                <Sister house={house} />
             </div>
         </div>
     );
