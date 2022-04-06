@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes, Navigate } from 'react-router-dom'
+import { Link, Route, Routes, Navigate } from 'react-router-dom'
 import { useState } from 'react'
 
 // components
