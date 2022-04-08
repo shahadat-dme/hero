@@ -13,8 +13,8 @@ function App() {
       const user = result.user;
       console.log(user);
     })
-    .catch(error => {
-      console.log('error',error);
+    .catch((error) => {
+      console.error('error', error);
     })
   }
   return (

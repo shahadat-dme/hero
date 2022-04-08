@@ -13,3 +13,36 @@
     <script src="api.js"></script>
 </body>
 </html>
+/*
+var KthLargest = function(k, nums) {
+	// concated not sort the orignal array
+    this.nums = [].concat(nums).sort((a,b)=>b-a);
+    this.k = k;
+};
+
+KthLargest.prototype.add = function(val) {    
+    if(!this.nums.length) {
+       this.nums.push(val)
+    }else if (this.nums[this.nums.length] >= val) {
+		// element is smaller then the elements we have so pushing at last of array
+        this.nums.push(val)
+    }else if(this.nums[0] <= val){
+		// element is greater then the elements we have so pushing at first of array
+        this.nums.unshift(val)
+    } else {
+		// inserting element at the relevant postion
+        let isInserted = false;
+        for(let i=0;i<this.nums.length;i++){
+            if(this.nums[i] <= val){
+                isInserted = true;
+                this.nums.splice(i,0,val)
+                break;
+            }
+        }
+        if(!isInserted){
+            this.nums.push(val)
+        }
+    }
+    return this.nums[this.k - 1]
+};
+*/
