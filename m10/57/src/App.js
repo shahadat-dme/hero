@@ -32,6 +32,7 @@ function App() {
   const handleRegisteredChange = (event) => {
     setRegistered(event.target.checked);
   }
+
   const handleFormSubmit = event => {
     // console.log('form submitted', email, password);
     event.preventDefault();
@@ -41,12 +42,13 @@ function App() {
       event.stopPropagation();
       return;
     }
-    if(!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*#?&^_-]).{8,}/.test(password)){
+    if(!/(?=.*?[#?!@$%^&*-])/.test(password)){
       setError('please set validation password')
       return;
     }
     setValidated(true);
     if(registered){
+      // console.log(email, password);
       signInWithEmailAndPassword(auth, email, password)
       .then(result => {
         const user = result.user;
@@ -64,7 +66,8 @@ function App() {
         console.log(user);
         setEmail('');
         setPassword('');
-    
+        verifyEmail();
+        setUserName();
       })
       .catch((error) => {
         console.error(error);
@@ -75,6 +78,7 @@ function App() {
       event.preventDefault();
       }
     }
+
     const handlePasswordReset = () => {
       sendPasswordResetEmail(auth, email)
         .then(() => {
@@ -132,8 +136,8 @@ function App() {
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check onChange={handleRegisteredChange} type="checkbox" label="Already Registered?" />
           </Form.Group>
-
           <p className="text-danger">{error}</p>
+          {/* <p className="text-success">{'success'}</p> */}
           <Button onClick={handlePasswordReset} variant="link">Forget Password?</Button>
           <br />
           <Button variant="primary" type="submit">
