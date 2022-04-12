@@ -1,9 +1,9 @@
 .header nav a{
     margin-right: 20px;
     text-decoration: none;
-    color: coral;
+    color: black;
 
 }
 .header nav a:hover{
-    color: crimson;
+    color: rgb(42, 167, 115);
 }
