@@ -10,6 +10,7 @@ const Register = () => {
                 <input type='email' placeholder='Your Email' />
                 <br />
                 <input type='password' name='' id='' placeholder='password' />
+                <br />
                 <input type='submit' value="Register" />
             </form>
         </div>
