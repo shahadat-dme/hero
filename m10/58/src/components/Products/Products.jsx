@@ -10,7 +10,7 @@ const Products = () => {
     return (
         <div>
             <h2>Knock knock ! who is there</h2>
-            <h5>{user ? user.displayName : 'vooooooooooot'}</h5>
+            <h5>{user ? user.displayName : 'voot'}</h5>
         </div>
     );
 };
