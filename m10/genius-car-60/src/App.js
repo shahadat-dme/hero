@@ -7,12 +7,11 @@ import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/about' element={<About></About>}></Route>
-        {/* <Route path='/' element={}></Route> */}
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
