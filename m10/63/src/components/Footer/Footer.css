@@ -1,0 +1,28 @@
+.footer {
+    background: rgb(212, 212, 204);
+    text-align: center;
+    
+}
+
+.footer .social-icon {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.footer .copyright {
+    padding: 1.5rem 1rem;
+    color: rgb(74, 59, 59);
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.footer .copyright span {
+    color: red;
+}
+.btn{
+    font-size: 35px;
+    color:rgb(21, 161, 189)
+}
