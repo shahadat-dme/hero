@@ -27,6 +27,8 @@ const users = [
 
 // filter by search query parameter
 app.get('/users', (req, res) => {
+    // console.log('query', req.query);
+    // res.send(users);
     if(req.query.name){
         const search = req.query.name.toLowerCase();
         const matched = users.filter(user => user.name.toLowerCase().includes(search))
@@ -46,6 +48,7 @@ app.get('/user/:id', (req, res) =>{
 
 
 app.post('/user', (req, res) =>{
+    // console.log('req', req);
     console.log('request', req.body);
     const user = req.body;
     user.id = users.length + 1;
