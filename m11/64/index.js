@@ -1,17 +1,15 @@
-const express = require('express')
+const express = require('express');
 const cors = require('cors');
-const app = express()
+const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Hello World!, I am form BD')
-})
-app.get('/about', (req, res) => {
-    res.send({id: 1, name: 'shahadat', job: 'Dev'})
-})
+    res.send('Hello World!')
+});
+
 const users = [
     { id: 1, name: 'Sabana', email: 'sabana@gmail.com', phone: '0178888888' },
     { id: 2, name: 'Shabnoor', email: 'Shabnoor@gmail.com', phone: '0178888888' },
@@ -66,8 +64,4 @@ app.get('/fruits/mango/fazle', (req, res) =>{
 
 app.listen(port, () => {
     console.log('Listening to port', port)
-})
-
-app.listen(port, () => {
-    console.log('Listening to port', port);
 })
