@@ -8,8 +8,8 @@ const InfoCard = ({ img, cardTitle, bgClass, cardBody }) => {
             </figure>
             <div className="card-body text-white">
                 <h2 className="card-title">{cardTitle}</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
-                {/* <p>{cardBody}</p> */}
+                {/* <p>Click the button to listen on Spotiwhy app.</p> */}
+                <p>{cardBody}</p>
             </div>
         </div>
     );
